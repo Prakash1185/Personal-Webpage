@@ -6,11 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
-        "blue":"#5840ba",
-        "background":"#F8FAFC",
-        "pair":"#a4db75"
-      }
+      colors: {
+        "bluee": "#5840ba",
+        "background": "#fbfcf8",
+        "pair": "#8adb44"
+      },
+
     },
   },
   plugins: [],
