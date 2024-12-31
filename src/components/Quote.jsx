@@ -41,7 +41,7 @@ const Quote = () => {
 
 
     return (
-        <div id="quote" className="bg-bluee min-h-[25rem] text-white py-8 px-16">
+        <div id="quote" className="bg-bluee min-h-[25rem] md:min-h-[20rem] text text-white py-8 px-16">
             <div className="relative flex items-center gap-2 pt-14">
                 <div className="w-5 h-1 bg-pair"></div>
                 <div className="text-xl font-medium">Quote</div>

@@ -65,6 +65,26 @@ const InfiniteRoleSlider = () => {
                 <i className="fa-solid fa-star-of-life"></i>
                 <h1>Canva</h1>
                 <i className="fa-solid fa-star-of-life"></i>
+                <h1>Frontend</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Backend</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>React</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Full Stack</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Canva</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Frontend</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Backend</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>React</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Full Stack</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Canva</h1>
+                <i className="fa-solid fa-star-of-life"></i>
             </div>
         </div>
     );

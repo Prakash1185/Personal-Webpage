@@ -52,6 +52,26 @@ const InfiniteWishSlider = () => {
                 <i className="fa-solid fa-star-of-life"></i>
                 <h1>Happy New Year 2025</h1>
                 <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
+                <h1>Happy New Year 2025</h1>
+                <i className="fa-solid fa-star-of-life"></i>
             </div>
         </div>
     )

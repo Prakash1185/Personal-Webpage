@@ -7,7 +7,7 @@ const Resolutions = () => {
             <div className="relative flex items-center justify-center gap-2  pt-14">
                 <div className="w-5 h-1 bg-bluee"></div>
                 <div className="text-xl font-medium dark:text-gray-100">Resolutions</div>
-                <div className="absolute  opacity-10 -top-2 text-[3.4rem] md:text-[4.5rem] font-bold tracking-wider whitespace-nowrap dark:text-gray-100">My Resolutions</div>
+                <div className="absolute  opacity-10 -top-2 text-[3.4rem] md:text-[4.5rem] font-bold tracking-wider whitespace-nowrap dark:text-gray-100 dark:opacity-5">My Resolutions</div>
             </div>
 
             <h1 className='text-5xl font-semibold text-center tracking-wider pt-2 dark:text-gray-100'>New Year <span className='text-bluee font-medium'>Resolutions</span></h1>

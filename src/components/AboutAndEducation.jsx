@@ -14,7 +14,7 @@ const AboutAndEducation = () => {
             <div className='flex flex-col md:flex-row md:gap-8 gap-10'>
                 <div id='left' className='md:w-1/2'>
                     <h1 className='text-5xl tracking-wide pt-2'>Who is <span className='text-pair font-medium'>Prakash?</span></h1>
-                    <p className='pt-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quae laudantium repellat dignissimos laborum iure deleniti, maiores quod itaque et, modi eveniet illo aperiam dolores! Incidunt earum harum inventore ut est consequatur? Voluptate doloribus hic ipsam non odio accusantium recusandae adipisci. Rerum, laborum fuga hic amet eligendi harum, similique delectus nostrum odio, corrupti a illo vitae voluptate! Aliquam distinctio libero, consectetur vel accusantium quod ipsam quasi ullam quae quam dignissimos inventore iste maxime optio a. Ea, velit nam? Iusto, sit.</p>
+                    <p className='pt-5'>Hello, my name is Prakash Kumar, and I am currently learning MERN stack development as i am passionate about building dynamic, responsive web apps and websites. Also I am learning about <span className='font-semibold text-pair'>NextJS,AI,GenAI</span> and other modern technologies that i will use in my future projects.And lastly,I love transforming ideas into reality with web development.</p>
                 </div>
 
                 <div id="right" className='md:w-1/2 '>

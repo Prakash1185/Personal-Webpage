@@ -12,25 +12,25 @@ const cards = [
     {
         id: 1,
         title: 'GSAP, Advanced Frontend',
-        content: 'lorem khfksdhf fdskfhsd fksdjf dkfhsdkf dskfhdksjf dskfdkjfsdkjfsdkfsd fksd fksfhksfhkjdsfh skdjfh skjdfhdskf',
+        content: 'I want to learn about how to make advanced Frontend projects. how to add advanced animations in a website.',
         image: gsap
     },
     {
         id: 2,
         title: 'Python , AI, GenAI',
-        content: 'lorem khfksdhf fdskfhsd fksdjf dkfhsdkf dskfhdksjf dskfdkjfsdkjfsdkfsd fksd fksfhksfhkjdsfh skdjfh skjdfhdskf',
+        content: 'My plan is to learn about GenAI so that i can add latest features like ai suggestions, chat bot ,and other ai related features in any website.',
         image: python
     },
     {
         id: 3,
         title: 'Data Structures and Algorithm',
-        content: 'lorem khfksdhf fdskfhsd fksdjf dkfhsdkf dskfhdksjf dskfdkjfsdkjfsdkfsd fksd fksfhksfhkjdsfh skdjfh skjdfhdskf',
+        content: 'I will also make sure to learn DSA this year so that i can improve my logic building skills and also try to crack an internship.',
         image: dsa
     },
     {
         id: 4,
         title: 'MERN Stack Projects',
-        content: 'lorem khfksdhf fdskfhsd fksdjf dkfhsdkf dskfhdksjf dskfdkjfsdkjfsdkfsd fksd fksfhksfhkjdsfh skdjfh skjdfhdskf',
+        content: 'As said earlier , this year i want to deep dive into MERN stack and will try to practice and apply all the concepts to solve real world problems.',
         image: mernn
     },
 ];
@@ -91,7 +91,7 @@ const Goals = () => {
             <div className="relative flex items-center justify-center gap-2 pt-14">
                 <div className="w-5 h-1 bg-bluee"></div>
                 <div className="text-xl font-medium dark:text-gray-100">Goals</div>
-                <div className="absolute opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider  dark:text-gray-100">My Goals</div>
+                <div className="absolute opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider  dark:text-gray-100 dark:opacity-5">My Goals</div>
             </div>
 
             <h1 className="text-5xl font-semibold text-center tracking-wider pt-2 dark:text-gray-100">

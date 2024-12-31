@@ -53,7 +53,7 @@ const HappyNewYearFrame = () => {
             <div className="relative flex items-center justify-center gap-2 pt-16">
                 <div className="w-5 h-1 bg-bluee"></div>
                 <div className="text-xl font-medium dark:text-gray-100">Activities</div>
-                <div className="absolute  opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider whitespace-nowrap dark:text-gray-100">Happy New Year</div>
+                <div className="absolute  opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider whitespace-nowrap dark:text-gray-100 dark:opacity-5">Happy New Year</div>
             </div>
           <div>
           <div className="flex md:justify-around items-center flex-col  md:flex-row py-8 pt-12">

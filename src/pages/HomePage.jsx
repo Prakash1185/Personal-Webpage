@@ -14,7 +14,7 @@ import HappyNewYearFrame from '../components/HappyNewYearFrame'
 
 const HomePage = () => {
   return (
-    <div className=''>
+    <div className='fade-in'>
       <HeroSection />
       <AboutAndEducation />
       <Skills />

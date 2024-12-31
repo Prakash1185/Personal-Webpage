@@ -20,7 +20,7 @@ const Skills = () => {
             <div className="relative flex items-center justify-center gap-2  pt-14">
                 <div className="w-5 h-1 bg-bluee"></div>
                 <div className="text-xl font-medium dark:text-gray-100">Skills</div>
-                <div className="absolute  opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider dark:text-gray-100">My Skills</div>
+                <div className="absolute  opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider dark:text-gray-100 dark:opacity-5">My Skills</div>
             </div>
 
             <h1 className='text-5xl font-semibold text-center tracking-wider pt-2 dark:text-gray-100'>My <span className='text-bluee font-medium'>Skills</span></h1>

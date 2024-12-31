@@ -7,7 +7,7 @@ const LearningBox = ({ image, title, descp }) => {
             </div>
             <div className='md:w-1/2'>
                 <h1 className='text-4xl font-medium tracking-wide'>{title}</h1>
-                <p className='pt-3 text-gray-300'>{descp}</p>
+                <p className='pt-3 text-gray-200'>{descp}</p>
             </div>
         </div>
     )
