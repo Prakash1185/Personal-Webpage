@@ -19,7 +19,7 @@ const HeroSection = () => {
 
             <div className="-mt-8  md:-mt-14">
                 <div className="relative">
-                    <img src={image3} alt="image" className="w-72 sm:w-80 mx-auto scale-95" />
+                    <img src={image} alt="image" className="w-72 sm:w-80 mx-auto scale-95" />
 
                     <div className="absolute bg-bluee dark:bg-bluee h-80 w-52 sm:w-56 left-[40%] sm:left-[43%]  md:left-[45%] -bottom-1 transform -translate-x-1/2 rounded-tl-[50px] -rotate-[8deg] -z-10"></div>
 
