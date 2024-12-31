@@ -20,7 +20,7 @@ const HomePage = () => {
       <Skills />
       <Learning />
       <InfiniteRoleSlider />
-      {/* <Goals /> */}
+      <Goals />
       <Quote />
       <Resolutions />
       <InfiniteWishSlider />

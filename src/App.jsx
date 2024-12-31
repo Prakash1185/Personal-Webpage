@@ -15,10 +15,10 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/games" element={<GamesPage />} />
       </Routes>
-      <PartyPopperButton />
+      {/* <PartyPopperButton /> */}
+      {/* <Footer /> */}
       {/* <PartyPopperButton /> */}
       <BackToTopButton />
-      {/* <Footer /> */}
       <Footer />
     </div>
   )

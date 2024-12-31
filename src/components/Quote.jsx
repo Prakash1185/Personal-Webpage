@@ -15,10 +15,13 @@ const Quote = () => {
                 'x-rapidapi-host': import.meta.env.VITE_HOST,
             }
         };
+
         try {
             const response = await fetch(url, options);
             const result = await response.json(); // Parse the response to JSON
             // console.log(result);
+
+
             if (result && Array.isArray(result)) {
                 const randomQuote = result[Math.floor(Math.random() * result.length)];
                 const [quoteText, authorText] = randomQuote.split(" - ");
@@ -36,6 +39,7 @@ const Quote = () => {
             setLoading(false);
         }
     };
+
     return (
         <div id="quote" className="bg-bluee text-white py-8 px-16">
             <div className="relative flex items-center gap-2 pt-14">
@@ -62,11 +66,14 @@ const Quote = () => {
             </div>
 
             <div className="pt-5 text-center">
-                <button onClick={fetchQuote}
+
+                <button
+                    onClick={fetchQuote}
                     className="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg backdrop-blur-md lg:font-semibold isolation-auto bg-white text-gray-950 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-pair hover:text-gray-950 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden rounded-full group"
                 >
                     Generate
-                    <svg className="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-bluee text-gray-200 ease-linear duration-300 rounded-full group-hover:border-none border border-gray-700 p-2 rotate-45"
+                    <svg
+                        className="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-bluee text-gray-200 ease-linear duration-300 rounded-full group-hover:border-none border border-gray-700 p-2 rotate-45"
                         viewBox="0 0 16 19"
                         xmlns="http://www.w3.org/2000/svg"
                     > <path
@@ -79,3 +86,6 @@ const Quote = () => {
     )
 }
 export default Quote;
+
+
+
