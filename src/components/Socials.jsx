@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Socials = () => {
   return (
-    <div className="pt-10 bg-background px-16 pb-16 border-b border-gray-500 border-opacity-30">
+    <div id="socials" className="pt-10 bg-background px-16 pb-16 border-b border-gray-500 border-opacity-30">
       <div className="relative flex items-center justify-center gap-2  pt-14">
         <div className="w-5 h-1 bg-bluee"></div>
         <div className="text-xl font-medium ">Socials</div>

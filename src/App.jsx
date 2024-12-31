@@ -16,8 +16,10 @@ const App = () => {
         <Route path="/games" element={<GamesPage />} />
       </Routes>
       <PartyPopperButton />
+      {/* <PartyPopperButton /> */}
       <BackToTopButton />
       {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

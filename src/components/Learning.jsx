@@ -17,7 +17,7 @@ const Learning = () => {
 
             <div className='flex flex-col pt-10 gap-10'>
 
-                <LearningBox image={genai} title={"Exploring GenAI - Generative AI"} descp={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa aspernatur animi dolor dicta? Facilis adipisci laborum itaque dolorum eaque. Inventore, doloribus? Quia inventore quidem, porro, cum voluptatum maxime, eaque nisi magnam quaerat perferendis corrupti necessitatibus autem hic aspernatur deserunt tenetur suscipit. Possimus sed perferendis, voluptatem soluta iste itaque aliquam. Ex!"} />
+                {/* <LearningBox image={genai} title={"Exploring GenAI - Generative AI"} descp={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa aspernatur animi dolor dicta? Facilis adipisci laborum itaque dolorum eaque. Inventore, doloribus? Quia inventore quidem, porro, cum voluptatum maxime, eaque nisi magnam quaerat perferendis corrupti necessitatibus autem hic aspernatur deserunt tenetur suscipit. Possimus sed perferendis, voluptatem soluta iste itaque aliquam. Ex!"} /> */}
 
                 <LearningBox image={mern} title={"Making Full Stack Projects"} descp={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa aspernatur animi dolor dicta? Facilis adipisci laborum itaque dolorum eaque. Inventore, doloribus? Quia inventore quidem, porro, cum voluptatum maxime, eaque nisi magnam quaerat perferendis corrupti necessitatibus autem hic aspernatur deserunt tenetur suscipit. Possimus sed perferendis, voluptatem soluta iste itaque aliquam. Ex!"} />
 

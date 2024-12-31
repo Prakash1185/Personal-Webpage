@@ -10,6 +10,7 @@ import Resolutions from '../components/Resolutions'
 import InfiniteWishSlider from '../components/InfiniteWishSlider'
 import PlayGamesCTA from '../components/PlayGamesCTA'
 import Socials from '../components/Socials'
+import HappyNewYearFrame from '../components/HappyNewYearFrame'
 
 const HomePage = () => {
   return (
@@ -24,7 +25,9 @@ const HomePage = () => {
       <Resolutions />
       <InfiniteWishSlider />
       <PlayGamesCTA />
-      <Socials/>
+      <HappyNewYearFrame />
+      <InfiniteWishSlider />
+      <Socials />
     </div>
   )
 }

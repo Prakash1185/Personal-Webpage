@@ -9,8 +9,8 @@ const Navbar = () => {
         Prakash<span className='text-4xl text-bluee'>.</span>
       </div>
       {/* links */}
-      <div>
-        <ul className='flex gap-8 font-semibold text-gray-800'>
+      <div className='hidden'>
+        <ul className='flex gap-8 font-semibold text-gray-800 '>
           <NavLink className={({ isActive }) => ` ${isActive ? 'text-bluee underline underline-offset-2' : ''}`} to={"/"}>Home</NavLink>
           <NavLink className={({ isActive }) => ` ${isActive ? 'text-bluee underline underline-offset-2' : ' '}`} to={"/games"}>Games</NavLink>
         </ul>

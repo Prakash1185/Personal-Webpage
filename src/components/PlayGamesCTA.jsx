@@ -11,7 +11,7 @@ const PlayGamesCTA = () => {
             </div>
 
             <div className="pt-5 flex items-center justify-between">
-                <p className="text-5xl font-medium tracking-wide">Play some fun games and refresh you mind</p>
+            <p className="text-5xl font-medium tracking-wide">Explore some fun activities and enjoy</p>
 
                 <button
                     type="submit"
