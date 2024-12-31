@@ -15,15 +15,15 @@ import vscode from "../assets/vscode.webp"
 
 const Skills = () => {
     return (
-        <div id='skills' className='pt-10 bg-background px-16 pb-16'>
+        <div id='skills' className='pt-10 bg-background px-10 sm:px-14 md:px-16 pb-16 dark:bg-gray-950'>
 
             <div className="relative flex items-center justify-center gap-2  pt-14">
                 <div className="w-5 h-1 bg-bluee"></div>
-                <div className="text-xl font-medium ">Skills</div>
-                <div className="absolute  opacity-10 -top-2 text-[4.5rem] font-bold tracking-wider">My Skills</div>
+                <div className="text-xl font-medium dark:text-gray-100">Skills</div>
+                <div className="absolute  opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider dark:text-gray-100">My Skills</div>
             </div>
 
-            <h1 className='text-5xl font-semibold text-center tracking-wider pt-2 '>My <span className='text-bluee font-medium'>Skills</span></h1>
+            <h1 className='text-5xl font-semibold text-center tracking-wider pt-2 dark:text-gray-100'>My <span className='text-bluee font-medium'>Skills</span></h1>
 
             <div className='flex gap-10 flex-wrap justify-center items-center pt-10'>
                 <SkillBox image={html} skill='HTML' />

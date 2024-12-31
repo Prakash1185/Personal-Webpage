@@ -14,7 +14,7 @@ import HappyNewYearFrame from '../components/HappyNewYearFrame'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className=''>
       <HeroSection />
       <AboutAndEducation />
       <Skills />

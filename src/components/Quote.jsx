@@ -7,6 +7,8 @@ const Quote = () => {
     // Fetch a new quote from the API
     const fetchQuote = async () => {
         setLoading(true); // Show loader while fetching
+        setQuote(""); // Clear previous quote
+        setAuthor(""); // Clear previous author
         const url = 'https://quotes85.p.rapidapi.com/keyword?word=success';
         const options = {
             method: 'GET',
@@ -19,8 +21,6 @@ const Quote = () => {
         try {
             const response = await fetch(url, options);
             const result = await response.json(); // Parse the response to JSON
-            // console.log(result);
-
 
             if (result && Array.isArray(result)) {
                 const randomQuote = result[Math.floor(Math.random() * result.length)];
@@ -29,19 +29,19 @@ const Quote = () => {
                 setAuthor(authorText || "Unknown Author");
             } else {
                 setQuote("No quote found.");
-                setAuthor("");
+                setAuthor(""); // Ensure author is cleared when no quote is found
             }
         } catch (error) {
             setQuote("Failed to fetch quote. Please try again.");
-            setAuthor("");
-            // console.error("Error fetching quote:", error);
+            setAuthor(""); // Ensure author is cleared in case of an error
         } finally {
             setLoading(false);
         }
     };
 
+
     return (
-        <div id="quote" className="bg-bluee text-white py-8 px-16">
+        <div id="quote" className="bg-bluee min-h-[25rem] text-white py-8 px-16">
             <div className="relative flex items-center gap-2 pt-14">
                 <div className="w-5 h-1 bg-pair"></div>
                 <div className="text-xl font-medium">Quote</div>
@@ -53,7 +53,7 @@ const Quote = () => {
             <div className="pt-5">
                 {loading ? (
                     <div className="text-2xl font-medium text-center animate-pulse">
-                        Loading...
+                        Generating...
                     </div>
                 ) : (
                     <p className="text-3xl font-medium tracking-wide">
@@ -61,7 +61,7 @@ const Quote = () => {
                     </p>
                 )}
                 {(
-                    <p className="mt-2 text-xl font-light text-right"> - {author || "Winston Churchill"}</p>
+                  author &&  <p className="mt-2 text-xl font-light text-right"> - {author}</p>
                 )}
             </div>
 

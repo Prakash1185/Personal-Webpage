@@ -87,28 +87,28 @@ const Goals = () => {
 
 
     return (
-        <div id="goals" className="pt-10 bg-background px-16 pb-16">
+        <div id="goals" className="pt-10 bg-background px-10 sm:px-14 md:px-16 pb-16 dark:bg-gray-950">
             <div className="relative flex items-center justify-center gap-2 pt-14">
                 <div className="w-5 h-1 bg-bluee"></div>
-                <div className="text-xl font-medium">Goals</div>
-                <div className="absolute opacity-10 -top-2 text-[4.5rem] font-bold tracking-wider">My Goals</div>
+                <div className="text-xl font-medium dark:text-gray-100">Goals</div>
+                <div className="absolute opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider  dark:text-gray-100">My Goals</div>
             </div>
 
-            <h1 className="text-5xl font-semibold text-center tracking-wider pt-2">
-                My <span className="text-bluee font-medium">Goals</span>
+            <h1 className="text-5xl font-semibold text-center tracking-wider pt-2 dark:text-gray-100">
+                My <span className="text-bluee font-medium ">Goals</span>
             </h1>
 
-            <div className="relative px-4 py-8 pb-20  overflow-hidden  ">
+            <div className="relative px-1 md:px-4 py-8 pb-20  overflow-hidden  ">
                 <Slider ref={sliderRef} {...settings}>
                     {cards.map((card) => (
-                        <div key={card.id} className="px-4 ">
-                            <div className=" rounded-lg  border border-gray-500 border-opacity-30 bg-bluee text-white  flex  justify-center px-3 py-5 gap-5">
+                        <div key={card.id} className="md:px-4 ">
+                            <div className=" rounded-lg  border border-gray-500 border-opacity-30 bg-bluee h-[30rem] md:h-fit text-white  flex flex-col md:flex-row  items-center justify-center px-3 py-5 gap-5 sax">
                                 <div className=' '>
-                                    <img src={card.image} className='w-52 rounded-xl' />
+                                    <img src={card.image} className='md:w-52 w-[17rem] rounded-xl' />
                                 </div>
-                                <div className='w-1/2 '>
-                                    <h2 className="text-4xl font-medium mb-4">{card.title}</h2>
-                                    <p>{card.content}</p>
+                                <div className='md:w-1/2 px-2'>
+                                    <h2 className="text-3xl sm:text-4xl font-medium  mb-2 sm:mb-4">{card.title}</h2>
+                                    <p className=''>{card.content}</p>
                                 </div>
                             </div>
                         </div>

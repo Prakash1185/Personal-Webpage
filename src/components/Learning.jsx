@@ -2,10 +2,11 @@ import React from 'react'
 import LearningBox from './LearningBox'
 import genai from "../assets/genai.png"
 import mern from "../assets/mern.webp"
+import mernn from "../assets/mernn.png"
 
 const Learning = () => {
     return (
-        <div id='learning' className='px-16 pb-16 pt-10 bg-bluee text-white  '>
+        <div id='learning' className='px-10 sm:px-14 md:px-16 pb-16 pt-10 bg-bluee text-white  '>
 
             <div className="relative flex items-center gap-2  pt-14">
                 <div className="w-5 h-1 bg-pair"></div>

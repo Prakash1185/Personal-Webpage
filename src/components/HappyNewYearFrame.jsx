@@ -47,31 +47,33 @@ const HappyNewYearFrame = () => {
         }, 1000);
         return () => clearInterval(timer);
     }, []);
+
     return (
-        <div id="activities" className='pt-14 bg-background px-16 pb-16'>
-            <div className="relative flex items-center justify-center gap-2  pt-16">
+        <div id="activities" className='pt-14 bg-background md:px-16 px-10 sm:px-14 pb-16 dark:bg-gray-950'>
+            <div className="relative flex items-center justify-center gap-2 pt-16">
                 <div className="w-5 h-1 bg-bluee"></div>
-                <div className="text-xl font-medium ">Activities</div>
-                <div className="absolute  opacity-10 -top-2 text-[4.5rem] font-bold tracking-wider">Happy New Year</div>
+                <div className="text-xl font-medium dark:text-gray-100">Activities</div>
+                <div className="absolute  opacity-10 -top-2 text-[3.5rem] md:text-[4.5rem] font-bold tracking-wider whitespace-nowrap dark:text-gray-100">Happy New Year</div>
             </div>
-            <div className="flex justify-around  py-8 pt-12">
+          <div>
+          <div className="flex md:justify-around items-center flex-col  md:flex-row py-8 pt-12">
                 <div className="">
-                    <div className="px-10  pb-10 flex flex-col gap-5">
-                        <p className="text-2xl font-medium">
+                    <div className="px-2 text-center md:text-start  md:px-10  pb-10 flex flex-col gap-5">
+                        <p className="text-2xl  font-medium dark:text-gray-100">
                             Upload your picture and celebrate ✨
                         </p>
                         {/* File Input */}
                         <label
                             htmlFor="file-input"
-                            className="px-8 py-4 text-white bg-bluee rounded-full  w-fit text-lg cursor-pointer hover:bg-opacity-95"
+                            className="px-8 py-4 text-white bg-bluee rounded-full  w-fit text-lg cursor-pointer hover:bg-opacity-95 mx-auto md:mx-0"
                         >
                             Upload Photo
                         </label>
                     </div>
                     {/* coutdown timer */}
-                    <div>
+                    <div className="hidden md:block">
                         <div className="flex flex-col items-center justify-center border bg-white border-gray-500 border-opacity-30  px-8 py-6 rounded-lg shadow-xl">
-                            <h1 className="text-4xl font-semibold mb-6 ">Countdown to New Year</h1>
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 ">Countdown to New Year</h1>
                             <div className="flex items-center justify-center text-center bg-pair text-black p-4 rounded-xl shadow-lg w-full max-w-xl">
                                 <TimeDisplay label="Days" value={timeLeft.days} />
                                 <Divider />
@@ -97,7 +99,7 @@ const HappyNewYearFrame = () => {
                     <div>
                         <div
                             id="frame-container"
-                            className="relative w-[25rem] h-[25rem] bg-gray-200 overflow-hidden rounded-lg"
+                            className="relative w-[20rem]  h-[20rem] sm:w-[23rem] sm:h-[23rem] md:w-[25rem] md:h-[25rem] bg-gray-200 overflow-hidden rounded-lg"
                         >
                             {/* Uploaded Image or Placeholder */}
                             {uploadedImage ? (
@@ -117,23 +119,42 @@ const HappyNewYearFrame = () => {
                                 className="absolute top-0 left-0 w-full h-full pointer-events-none"
                             />
                         </div>
-                        <div className="w-full flex  justify-start py-2">
+                        <div className="w-full flex  justify-start  py-2">
                             <button
                                 onClick={handleDownload}
                                 className="px-4 py-3 text-white bg-bluee  hover:bg-opacity-95 transition-all duration-200 rounded-full "
                             >
-                                <i class="fa-solid fa-download"></i>
+                                <i className="fa-solid fa-download"></i>
                             </button>
                         </div>
                     </div>
                 </div>
+
+                {/* Countdown on screen */}
+                {/* coutdown timer */}
+                <div className=" md:hidden pt-16">
+                        <div className="flex flex-col items-center justify-center border bg-white border-gray-500 border-opacity-30  px-8 py-6 rounded-lg shadow-xl">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 ">Countdown to New Year</h1>
+                            <div className="flex items-center justify-center text-center bg-pair text-black p-4 rounded-xl shadow-lg w-full max-w-xl">
+                                <TimeDisplay label="Days" value={timeLeft.days} />
+                                <Divider />
+                                <TimeDisplay label="Hours" value={timeLeft.hours} />
+                                <Divider />
+                                <TimeDisplay label="Minutes" value={timeLeft.minutes} />
+                                <Divider />
+                                <TimeDisplay label="Seconds" value={timeLeft.seconds} />
+                            </div>
+                            <PartyPopperButton />
+                        </div>
+                    </div>
             </div>
+          </div>
         </div>
     );
 };
 const TimeDisplay = ({ label, value }) => (
     <div className="flex flex-col items-center w-1/4">
-        <span className="text-4xl font-bold">{value < 10 ? `0${value}` : value}</span>
+        <span className="text-2xl sm:text-3xl md:text-4xl font-bold">{value < 10 ? `0${value}` : value}</span>
         <span className="text-sm font-medium mt-1">{label}</span>
     </div>
 );

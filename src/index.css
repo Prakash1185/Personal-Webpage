@@ -4,12 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   scroll-behavior: smooth;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  
   margin: 0;
   height: 100vh;
   background: repeating-linear-gradient(
@@ -28,8 +29,13 @@ body {
     );
   background-position: top left;
   background-size: 100px 100px;
+  overflow-x: hidden;
 }
 
+
+
+
+/* Toggle Switch */
 .switch {
   font-size: 17px;
   position: relative;
@@ -88,7 +94,6 @@ body {
   height: 24px;
 }
 
-/* .switch:hover */
 .sun svg {
   animation: rotate 15s linear infinite;
 }
@@ -103,7 +108,6 @@ body {
   }
 }
 
-/* .switch:hover */
 .moon svg {
   animation: tilt 5s linear infinite;
 }
@@ -138,7 +142,7 @@ body {
   transform: translateX(30px);
 }
 
-/* infinte scroller logic starts */
+/* Infinite Scroller Logic Starts */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -156,6 +160,24 @@ body {
 .animate-scroll:hover {
   animation-play-state: paused;
 }
-/* infinte scroller logic ends */
+/* Infinite Scroller Logic Ends */
 
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5840ba;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #d4c9c9;
+}
 
+/* Dark Mode Scrollbar */
+body.dark ::-webkit-scrollbar-thumb {
+  background-color: #1c1c1c;
+}
+
+body.dark ::-webkit-scrollbar-track {
+  background-color: #2e2e2e;
+}

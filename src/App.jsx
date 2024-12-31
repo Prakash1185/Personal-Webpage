@@ -8,6 +8,9 @@ import PartyPopperButton from "./components/PartyPopperButton";
 
 
 const App = () => {
+  
+  
+
   return (
     <div className="">
       <Navbar />
