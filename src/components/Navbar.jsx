@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link to={"/"}>
         <div className="font-bold text-3xl text-gray-800 dark:text-gray-100">
-          Prakash<span className="text-4xl text-blue-500 ">.</span>
+          Prakash<span className="text-4xl text-bluee  ">.</span>
         </div>
       </Link>
 
