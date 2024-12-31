@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   // State for dark mode
@@ -22,9 +22,11 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between px-10 sm:px-16 md:px-20 py-2 pt-5 items-center dark:bg-gray-950">
       {/* Logo */}
-      <div className="font-bold text-3xl text-gray-800 dark:text-gray-100">
-        Prakash<span className="text-4xl text-blue-500 ">.</span>
-      </div>
+      <Link to={"/"}>
+        <div className="font-bold text-3xl text-gray-800 dark:text-gray-100">
+          Prakash<span className="text-4xl text-blue-500 ">.</span>
+        </div>
+      </Link>
 
       {/* Links */}
       <div className="hidden">
