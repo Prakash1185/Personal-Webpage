@@ -1,25 +1,79 @@
+import React, { useState } from "react";
 
 const Quote = () => {
+    const [quote, setQuote] = useState("");
+    const [author, setAuthor] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    // Fetch a new quote from the API
+    const fetchQuote = async () => {
+        setLoading(true); // Show loader while fetching
+        const url = 'https://quotes85.p.rapidapi.com/keyword?word=success';
+        const options = {
+            method: 'GET',
+            headers: {
+                'x-rapidapi-key': import.meta.env.VITE_API_KEY,
+                'x-rapidapi-host': import.meta.env.VITE_HOST,
+            }
+        };
+
+        try {
+            const response = await fetch(url, options);
+            const result = await response.json(); // Parse the response to JSON
+            // console.log(result);
+
+
+            if (result && Array.isArray(result)) {
+                const randomQuote = result[Math.floor(Math.random() * result.length)];
+                const [quoteText, authorText] = randomQuote.split(" - ");
+                setQuote(quoteText);
+                setAuthor(authorText || "Unknown Author");
+            } else {
+                setQuote("No quote found.");
+                setAuthor("");
+            }
+        } catch (error) {
+            setQuote("Failed to fetch quote. Please try again.");
+            setAuthor("");
+            // console.error("Error fetching quote:", error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <div id="quote" className="bg-bluee text-white py-8 px-16">
-            <div className="relative flex items-center gap-2  pt-14">
+            <div className="relative flex items-center gap-2 pt-14">
                 <div className="w-5 h-1 bg-pair"></div>
-                <div className="text-xl font-medium ">Quote</div>
-                <div className="absolute -left-10 top-0 opacity-5 text-[4.5rem] font-bold tracking-wider">Positive Quote</div>
+                <div className="text-xl font-medium">Quote</div>
+                <div className="absolute -left-10 top-0 opacity-5 text-[4.5rem] font-bold tracking-wider">
+                    Positive Quote
+                </div>
             </div>
 
             <div className="pt-5">
-                <p className="text-3xl font-medium tracking-wide">This is demo quote for demo purpose only and will change with time when click on generate.</p>
+                {loading ? (
+                    <div className="text-2xl font-medium text-center animate-pulse">
+                        Loading...
+                    </div>
+                ) : (
+                    <p className="text-3xl font-medium tracking-wide">
+                        {quote || "Success is not final, failure is not fatal: It is the courage to continue that counts."}
+                    </p>
+                )}
+                {(
+                    <p className="mt-2 text-xl font-light text-right"> - {author || "Winston Churchill"}</p>
+                )}
             </div>
 
             <div className="pt-5 text-center">
                 <button
-                    type="submit"
-                    class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg backdrop-blur-md lg:font-semibold isolation-auto bg-white text-gray-950 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-pair hover:text-gray-950 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden rounded-full group"
+                    onClick={fetchQuote}
+                    className="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg backdrop-blur-md lg:font-semibold isolation-auto bg-white text-gray-950 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-pair hover:text-gray-950 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden rounded-full group"
                 >
                     Generate
                     <svg
-                        class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-bluee text-gray-20 0 ease-linear duration-300 rounded-full group-hover:border-none border border-gray-700  p-2 rotate-45"
+                        className="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-bluee text-gray-200 ease-linear duration-300 rounded-full group-hover:border-none border border-gray-700 p-2 rotate-45"
                         viewBox="0 0 16 19"
                         xmlns="http://www.w3.org/2000/svg"
                     >
@@ -28,12 +82,9 @@ const Quote = () => {
                         ></path>
                     </svg>
                 </button>
-
-
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default Quote
+export default Quote;

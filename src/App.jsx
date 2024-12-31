@@ -15,9 +15,9 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/games" element={<GamesPage />} />
       </Routes>
-      <PartyPopperButton />
+      {/* <PartyPopperButton /> */}
       <BackToTopButton />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
