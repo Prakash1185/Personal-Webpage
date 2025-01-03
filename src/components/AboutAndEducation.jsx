@@ -32,7 +32,7 @@ const AboutAndEducation = () => {
                         <div className='w-full bg-background bg-opacity-10  rounded-xl px-5 py-2 flex  items-center justify-between'>
                             <div>
                                 <h1 className='font-bold text-gray-950'>CBSE XII</h1>
-                                <h1>Foundation School</h1>
+                                {/* <h1>CBSE</h1> */}
                                 <h1 className='font-bold '>81%</h1>
                             </div>
                             <div className='bg-white text-gray-950 font-semibold rounded-md p-1'>
@@ -42,7 +42,7 @@ const AboutAndEducation = () => {
                         <div className='w-full bg-background bg-opacity-10  rounded-xl px-5 py-2 flex items-center justify-between'>
                             <div>
                                 <h1 className='font-bold text-gray-950'>CBSE X</h1>
-                                <h1>DAV Public School</h1>
+                                {/* <h1>CBSE</h1> */}
                                 <h1 className='font-bold '>89.6%</h1>
                             </div>
                             <div className='bg-white text-gray-950 font-semibold rounded-md p-1'>
