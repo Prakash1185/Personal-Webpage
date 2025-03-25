@@ -21,7 +21,7 @@ const App = () => {
       </Routes>
       {/* <PartyPopperButton /> */}
       {/* <Footer /> */}
-      {/* <PartyPopperButton /> */}
+      <PartyPopperButton />
       <BackToTopButton />
       <Footer />
     </div>
