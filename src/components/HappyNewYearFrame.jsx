@@ -150,7 +150,7 @@ const HappyNewYearFrame = () => {
 
                     {/* Countdown on screen */}
                     {/* coutdown timer */}
-                    <div className=" md:hidden pt-16 hidden">
+                    <div className=" md:hidden pt-16 ">
                         <div className="flex flex-col items-center justify-center border bg-white border-gray-500 border-opacity-30  px-8 py-6 rounded-lg shadow-xl">
                             <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 ">Countdown to New Year</h1>
                             <div className="flex items-center justify-center text-center bg-pair text-black p-4 rounded-xl shadow-lg w-full max-w-xl">
